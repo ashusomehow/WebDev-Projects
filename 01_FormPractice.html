@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        }
+
+        label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        }
+
+        input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        margin-right: 10px;
+        border: 1px solid #ababab;
+        border-radius: 5px;
+        font-size: 16px;
+        }
+
+        input:focus, textarea:focus {
+        box-shadow: 0 0 10px rgba(5, 45, 178,1.0);
+        }
+
+        button {
+        width: 100%;
+        padding: 10px;
+        background-color: #080e20;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        }
+
+        button:hover {
+        background-color: #0b0b9d;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+      
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number" pattern="[0-9]{10}">
+      
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+      
+        <button type="submit">Submit</button>
+      </form>
+      <!-- <form action="">
+        <label for="name">name: </label>
+        <input type="text" id="'name" placeholder="enter name!">
+      </form> -->
+    
+</body>
+</html>
